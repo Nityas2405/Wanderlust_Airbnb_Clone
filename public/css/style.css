@@ -99,17 +99,28 @@
 }
 
 /* edit page */
+.show-img-container {
+  width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
 .show-img{
-    width: 100%;
-  height: 30vh;
+  width: 100%;
+  height: 22rem; /* Clean height on mobile */
   object-fit: cover;
-  border-radius: 1rem;
+  display: block;
 }
 
 @media (min-width: 768px) {
   .show-img {
     height: 40vh;
   }
+}
+
+.show-card {
+  padding: 0;
+  background: transparent;
 }
 
 .btns{
