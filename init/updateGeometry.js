@@ -1,5 +1,7 @@
-const path = require("path");
+const dns = require("node:dns");
+dns.setServers(["8.8.8.8", "8.8.4.4"])
 
+const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
 const mongoose = require("mongoose");
@@ -10,7 +12,7 @@ const { config, geocoding } = require("@maptiler/client");
 config.apiKey = process.env.MAP_TOKEN;
 
 // Connect to MongoDB
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust"; // Replace with your DB URL
+const MONGO_URL = process.env.ATLASDB_URL; // Replace with your DB URL
 mongoose.connect(MONGO_URL);
 
 async function updateExistingListings() {
