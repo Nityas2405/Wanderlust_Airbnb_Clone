@@ -59,6 +59,23 @@
     margin-bottom: 2rem;
 }
 
+.listing-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.listing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+
+.listing-link:hover .listing-card {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
 .card-img-top{
     border-radius: 1rem !important;
     width: 100% !important;
