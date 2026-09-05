@@ -95,8 +95,6 @@ CLOUD_API_SECRET=your_cloudinary_api_secret
 MAPTILER_API_KEY=your_maptiler_api_key
 ```
 
-> Variable names above are a best guess based on your dependencies — rename these to match whatever you actually read via `process.env` in your code.
-
 ### 4. Seed the database (optional)
 
 If an `init/index.js` seed script is present:
@@ -113,7 +111,6 @@ node index.js
 
 Then open **http://localhost:8080** (or whichever port your app listens on).
 
-> There's currently no `start` script in `package.json` — you may want to add `"start": "node index.js"` under `scripts` so `npm start` works too.
 
 ## 🌐 Deployment
 
