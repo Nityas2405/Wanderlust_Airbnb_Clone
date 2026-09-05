@@ -17,7 +17,7 @@ WanderLust is a full-stack Airbnb-inspired accommodation listing platform. Users
 - Image uploads for listings via Cloudinary
 - Interactive maps on listing pages via MapTiler
 - Flash messages for user feedback (e.g. successful login, errors)
-- Responsive UI
+- Light and Dark mode
 
 ## 🛠️ Tech Stack
 
