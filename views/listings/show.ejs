@@ -1,4 +1,27 @@
 <% layout("/layouts/boilerplate") %>
+<head>
+     <style>
+            :root{
+    --primary-color : #FAF9F6;
+    --secondary-color : #222;
+    --border : #CFCFCF;
+}
+
+.dark-theme{
+     --primary-color : #222;
+    --secondary-color : #FAF9F6;
+    --border : #6E6E6E;
+}
+    .mt-3,h1,.mb-3,.show-card{
+        background-color: var(--primary-color) !important;
+        color: var(--secondary-color) !important ;
+        border: var(--secondary-color) !important;
+    }  
+    .show-card{
+        border: 1px solid var(--border) !important;
+    }
+    </style>
+</head>
 <script>
         const mapToken = "<%= process.env.MAP_TOKEN %>";
         const listing = JSON.parse('<%- JSON.stringify(listing) %>');
@@ -54,7 +77,7 @@
                 <textarea name="review[comment]" id="comment" cols="30" rows="5" class="form-control" required></textarea>
                 <div class="invalid-feedback">Please add some comments for review</div>
             </div>
-            <button class="btn btn-outline-dark">Submit</button>
+            <button class="btn btn-dark ">Submit</button>
         </form> 
         <% } %>
         <hr>

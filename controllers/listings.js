@@ -56,7 +56,7 @@ module.exports.editListing = async (req,res) => {
         return res.redirect("/listings");
     }
     let originalImageUrl = listing.image.url;
-    originalImageUrl=originalImageUrl.replace("/upload","/upload/h_300,w_350");
+    originalImageUrl = originalImageUrl.replace("/upload","/upload/h_300,w_350");
     res.render("listings/edit.ejs",{listing,originalImageUrl});
 }
 
@@ -87,7 +87,7 @@ module.exports.deleteListing = async (req,res) => {
 module.exports.filterByCategory = async (req, res) => {
   const { category } = req.params;
   
-  // Replace hyphens with spaces to match database strings like "Iconic cities"
+  //Filters
   const targetCategory = category.replace(/-/g, " ").trim().toLowerCase();
 
   const allListings = await Listing.find({});

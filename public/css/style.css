@@ -1,16 +1,32 @@
-.body{
+:root{
+    --primary-color : #FAF9F6;
+    --secondary-color : #222;
+    --footer-color : #CFCFCF;
+}
+
+.dark-theme{
+     --primary-color : #222;
+    --secondary-color : #FAF9F6;
+    --footer-color : #3D3D3D;
+}
+
+
+body{
       font-family: "Plus Jakarta Sans", sans-serif !important;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      background-color: var(--primary-color) !important;
 }
 .container{
     flex: 1;
 }
 
+
 .navbar{
     height: 5rem;
-    background-color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .fa-compass{
@@ -19,12 +35,12 @@
 }
 
 .nav-link{
-    color: #222 !important;
+    color: var(--secondary-color) !important;
 }
 
 .f-info-links a{
     text-decoration: none;
-    color: #222;
+    color: var(--secondary-color);
 }
 
 .f-info-links a:hover{
@@ -36,17 +52,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--footer-color);
+    color: var(--secondary-color);
 }
 
 .f-info-socials i{
     font-size: 1.2rem;
     margin-right: 1rem;
+    color: var(--secondary-color);
 }
 
 .f-info{
     text-align: center;
     height: 8rem;
-    background-color: #ebebeb;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,6 +76,8 @@
 .listing-card{
     border: none !important;
     margin-bottom: 2rem;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 .listing-link {
@@ -95,16 +116,6 @@
     text-decoration: none;
 }
 
-/* Card effect on the index page */
-.card-img-overlay{
-    opacity: 0;
-}
-
-.card-img-overlay:hover{
-    opacity: 0.2;
-    background-color: white;
-}
-
 .add-btn{
     border: none !important;
     background-color: #fe424d  !important;
@@ -128,3 +139,16 @@
       height: 400px;
     width: 100vh;   
  }
+
+#moon{
+    font-size: 1.4rem;        
+  margin-left: auto;        
+  margin-right: 1.25rem;    
+  cursor: pointer;
+}
+
+#moon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}

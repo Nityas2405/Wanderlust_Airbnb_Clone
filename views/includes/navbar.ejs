@@ -42,8 +42,10 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         Search</button>
     </form>
+ 
       </div>
       <div class="navbar-nav ms-auto">
+        <i class="fa-solid fa-moon fs-4 me-3" style="cursor: pointer;" id="moon"></i>
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if(!currUser) { %>
         <a class="nav-link" href="/signup"><b>Sign up</b></a>
@@ -55,4 +57,22 @@
       </div>
     </div>
   </div>
+     <script>
+  let icon = document.getElementById("moon");
+
+  if (localStorage.getItem("mode") === "dark") {
+    document.body.classList.add("dark-theme");
+  }
+
+  icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  };
+</script>
+
 </nav>
