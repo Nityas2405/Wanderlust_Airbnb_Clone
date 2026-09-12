@@ -2,7 +2,7 @@
 
 WanderLust is a full-stack Airbnb-inspired accommodation listing platform. Users can browse stays by category, view detailed listing pages with pricing, sign up and log in, and list their own space.
 
-**🔗 Live demo:** [wanderlust-airbnb-clone-9crb.onrender.com/listings](https://wanderlust-airbnb-clone-9crb.onrender.com/listings)
+**🔗 Live demo:** [wanderlust-airbnb-clone-9crb.onrender.com/listings](https://wanderlust-airbnb-clone-9crb.onrender.com)
 
 ---
 
